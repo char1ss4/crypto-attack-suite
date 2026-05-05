@@ -1,0 +1,5 @@
+.env
+venv/
+foundry-attacks/cache/
+foundry-attacks/out/
+reports/
