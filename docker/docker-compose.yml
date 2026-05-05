@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  anvil:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8545:8545"
+    environment:
+      - ANVIL_ACCOUNTS=10
+      - ANVIL_BALANCE=10000
+    volumes:
+      - ..:/app
